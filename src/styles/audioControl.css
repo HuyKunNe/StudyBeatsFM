@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-    margin-left: 11rem;
+    /* margin-left: 11rem; */
     z-index: 1;
   }
   
@@ -16,6 +16,8 @@
     font-size: 3rem;
     color: white;
     display: flex;
+    margin-bottom: 50px;
+
     flex-direction: row;
     justify-content: center;
     box-sizing: border-box;

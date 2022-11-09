@@ -246,12 +246,12 @@ function App() {
     setBtnClass2("playBtn2");
   };
 
-  const VietTrap = () => {
-    setVideo("//www.youtube.com/embed/tLfMm_ESRCg?autoplay=1&mute=1&start=0");
-    setStationName("VietTrap");
-    setYoutubeChannal("https://www.youtube.com/c/Lucin3x");
+  const TheMaskedSinger = () => {
+    setVideo("//www.youtube.com/embed/v=9ehcT3Un97Q?autoplay=1&mute=1&start=0");
+    setStationName("The Masked Singer");
+    setYoutubeChannal("https://www.youtube.com/c/VieBeauty");
     setLivestream(
-      "https://www.youtube.com/watch?v=tLfMm_ESRCg&ab_channel=nostalgic"
+      "https://www.youtube.com/watch?v=9ehcT3Un97Q&t=12s&ab_channel=nostalgic"
     );
     playLiveStream(true);
     setPauseScreen("unpauseScreen");
@@ -279,7 +279,7 @@ function App() {
             Study={StudyMD}
             Jazz={theJazzHopCafe}
             Nice={NiceGuys}
-            Trap={VietTrap}
+            TheMaskedSinger={TheMaskedSinger}
           />
         </div>
         <div className="socialsContainer2">
@@ -288,7 +288,7 @@ function App() {
               whileHover={{ scale: 1.09 }}
               whileTap={{ scale: 0.9 }}
               onClick={() => {
-                window.open("https://github.com/adamPatrick12");
+                window.open("https://github.com/huykunne");
               }}
               className="link"
             >
@@ -312,8 +312,11 @@ function App() {
         <PauseImage />
         <p style={{ marginTop: "0rem" }}>Music Paused</p>
       </div>
+
       <AdditionSettings youtube={youtubeChannal} radio={stationName} />
+
       <div class="videoContainer">
+        
         <ReactPlayer
           className="vid"
           width="140%"
@@ -324,9 +327,6 @@ function App() {
           url={video}
         />
       </div>
-
-      
-
       <Loading />
     </div>
   );
